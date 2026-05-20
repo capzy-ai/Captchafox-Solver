@@ -141,6 +141,17 @@ When the task is ready (`status: "ready"`), `solution` contains:
 |-------|------|-------|
 | `token` | `string` | The CaptchaFox token. Submit on the target site exactly where CaptchaFox expects it. |
 
+### Example
+
+```json
+{
+  "status": "ready",
+  "solution": {
+    "token": "<long CaptchaFox token string>"
+  }
+}
+```
+
 ### How to use the result
 
 Set the returned token in the CaptchaFox response field on the target site's form.
